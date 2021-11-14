@@ -18,9 +18,18 @@ public class OperationService {
         clientProxy = new ClientProxy();
     }
 
-    public void getAllBalanceClient(int clientId){
-
+    public void getAllProductBalanceClient(int clientId){
+        accountProxy.accountsGet()
+                .filter(account -> account.getClientId().equals(clientId))
+                .collect(Collectors.toList())
+                .forEach(System.out::println);
     }
 
+    public void getAllMovementsFromAccount(int accountId){
+        movementsProxy.getAllMovements()
+                .filter(movements -> movements.getAccountId().equals(accountId))
+                .collect(Collectors.toList())
+                .forEach(System.out::println);
+    }
 
 }
