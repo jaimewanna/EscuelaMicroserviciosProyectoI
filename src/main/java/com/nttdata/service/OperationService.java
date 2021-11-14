@@ -1,10 +1,13 @@
 package com.nttdata.service;
 
+import com.nttdata.model.Business;
+import com.nttdata.model.Client;
 import com.nttdata.proxy.AccountProxy;
 import com.nttdata.proxy.MovementsProxy;
 import com.nttdata.proxy.ClientProxy;
 
 import java.math.BigDecimal;
+import java.util.List;
 import java.util.stream.Collectors;
 
 public class OperationService {
@@ -17,6 +20,24 @@ public class OperationService {
         accountProxy = new AccountProxy();
         movementsProxy = new MovementsProxy();
         clientProxy = new ClientProxy();
+    }
+
+    public void addBusinessClient(Business business){
+        List<Business> businessList = clientProxy.businessGetAll().collect(Collectors.toList());
+        System.out.println("LISTADO: \n");
+        businessList.forEach(System.out::println);
+        System.out.println("LISTADO ACTUALIZADO \n");
+        businessList.add(business);
+        businessList.forEach(System.out::println);
+    }
+
+    public void addPersonalClient(Client client){
+        List<Client> clientList = clientProxy.personalGetAll().collect(Collectors.toList());
+        System.out.println("LISTADO: \n");
+        clientList.forEach(System.out::println);
+        System.out.println("LISTADO ACTUALIZADO \n");
+        clientList.add(client);
+        clientList.forEach(System.out::println);
     }
 
     //Se traen todas las cuentas bancarias, se filtran por el id del cliente, se convierten en lista y se muestran
