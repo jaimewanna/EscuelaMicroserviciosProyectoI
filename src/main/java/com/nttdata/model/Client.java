@@ -1,5 +1,6 @@
 package com.nttdata.model;
 
+import com.nttdata.model.utils.ClientType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -9,8 +10,9 @@ import lombok.Data;
 public class Client {
 
     private Integer id;
-    private String clientType;
-    private String name;
+    private ClientType clientType;
+    private String firstName;
+    private String lastName;
     private String dni;
     private String ruc;
 

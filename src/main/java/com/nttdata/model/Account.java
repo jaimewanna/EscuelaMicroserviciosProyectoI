@@ -8,11 +8,11 @@ import lombok.Data;
 
 public class Account {
 
-    private int id;
+    private Integer id;
     private String accountType;
     private Double balance;
     private Double maintenanceFee;
-    private int monthlyMovements;
-    private int clientId;
+    private Integer monthlyMovements;
+    private Integer clientId;
 
 }
