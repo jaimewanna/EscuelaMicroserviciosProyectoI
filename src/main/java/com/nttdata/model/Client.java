@@ -13,7 +13,6 @@ public class Client {
     private ClientType clientType;
     private String firstName;
     private String lastName;
-    private String dni;
-    private String ruc;
+
 
 }
