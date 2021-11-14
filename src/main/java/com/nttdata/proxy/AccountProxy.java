@@ -14,6 +14,7 @@ public class AccountProxy {
         accounts.add(new Account(2, "Cuenta Corriente",2400.00,5.4,0,5));
         accounts.add(new Account(3, "Plazo Fijo",5000.00,0.0,1,6));
 
+
         return accounts.stream();
     }
 
