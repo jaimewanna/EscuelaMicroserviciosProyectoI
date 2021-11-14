@@ -9,8 +9,8 @@ public class AccountProxy {
     public Stream<Account> accountsGet() {
         List<Account> accounts = new ArrayList<>();
         accounts.add(new Account(1, "Ahorro",1200.00,0.0,4,1));
-        accounts.add(new Account(1, "Cuenta Corriente",2400.00,5.4,0,2));
-        accounts.add(new Account(1, "Plazo Fijo",5000.00,0.0,1,3));
+        accounts.add(new Account(2, "Cuenta Corriente",2400.00,5.4,0,2));
+        accounts.add(new Account(3, "Plazo Fijo",5000.00,0.0,1,3));
 
         return accounts.stream();
     }

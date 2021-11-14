@@ -6,7 +6,7 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 
-public class Credit {
+public class Credit {   //Serán los activos
 
     private int id;
     private String creditType;

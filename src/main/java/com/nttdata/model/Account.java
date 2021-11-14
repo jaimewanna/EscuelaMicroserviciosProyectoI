@@ -6,7 +6,7 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 
-public class Account {
+public class Account {  //Serán los pasivos
 
     private Integer id;
     private String accountType;
