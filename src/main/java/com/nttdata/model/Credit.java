@@ -3,13 +3,17 @@ package com.nttdata.model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
+import java.math.BigDecimal;
+
 @Data
 @AllArgsConstructor
 
 public class Credit {   //Serán los activos
 
-    private int id;
+    private Integer id;
     private String creditType;
-    private int clientId;
+    private Integer clientId;
+    private Double amount;
+    private Double limit;
 
 }

@@ -15,6 +15,7 @@ public class App
         OperationService operationService = new OperationService();
 
         //operationService.getAllProductBalanceClient(4);
-        operationService.getAllMovementsFromAccount(1);
+        //operationService.getAllMovementsFromAccount(1);
+        operationService.addConsumetoCard(1,600.00);
     }
 }
