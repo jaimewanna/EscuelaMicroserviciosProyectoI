@@ -1,4 +1,4 @@
-package proxy;
+package com.nttdata.proxy;
 
 import com.nttdata.model.Account;
 
